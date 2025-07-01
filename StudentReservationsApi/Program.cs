@@ -13,8 +13,7 @@ builder.Services.AddSwaggerGen();
 // add db context option
 builder.Services
     .AddDbContext<AppDbContext>(op =>
-            op.UseSqlServer(//"Server=db22400.public.databaseasp.net; Database=db22400; User Id=db22400; Password=8d@JzH4!_iN6; Encrypt=True; TrustServerCertificate=True;"));
-                "Server=db22402.public.databaseasp.net; Database=db22402; User Id=db22402; Password=o?7M+Pq3X4@r; Encrypt=True; TrustServerCertificate=True; MultipleActiveResultSets=True;"));
+            op.UseSqlServer("Server=db21757.databaseasp.net; Database=db21757; User Id=db21757; Password=8m-XZ_7i6Wr?; Encrypt=False; MultipleActiveResultSets=True; "));
 
 // ✅ Add CORS services
 builder.Services.AddCors(options =>
@@ -48,3 +47,7 @@ app.Run();
 
 
 //Server=db21757.databaseasp.net; Database=db21757; User Id=db21757; Password=8m-XZ_7i6Wr?; Encrypt=False; MultipleActiveResultSets=True; 
+
+
+//"Server=db22400.public.databaseasp.net; Database=db22400; User Id=db22400; Password=8d@JzH4!_iN6; Encrypt=True; TrustServerCertificate=True;"));
+               // "Server=db22402.public.databaseasp.net; Database=db22402; User Id=db22402; Password=o?7M+Pq3X4@r; Encrypt=True; TrustServerCertificate=True; MultipleActiveResultSets=True;"
