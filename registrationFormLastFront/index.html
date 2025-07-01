@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Responsive Registration Form | CodingLab </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div style="text-align: center;">
+      <img src="Untitled-1.png" width="216" height="70">
+    </div>
+    <div class="title">
+      <h3>حجز الصف الثالث الثانوي مادة الكيمياء</h3>
+    </div>
+    <div class="content">
+      <form id="registrationForm">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">:الإسم بالكامل</span>
+            <input type="text" id="name" placeholder="اكتب اسمك بالكامل رباعي" required>
+          </div>
+          <div class="input-box">
+            <span class="details">:رقم تليفون الطالب</span>
+            <input type="tel" id="phone" placeholder="ادخل رقم تليفونك صحيح" required pattern="[0-9]{11}" minlength="11"
+              maxlength="11">
+          </div>
+          <div class="input-box">
+            <span class="details">:رقم تليفون ولي الامر</span>
+            <input type="tel" id="phoneParent1" placeholder="ادخل رقم تليفون ولي امرك صحيح" required pattern="[0-9]{11}"
+              minlength="11" maxlength="11">
+          </div>
+          <div class="input-box">
+            <span class="details">:رقم اخر ولي الامر</span>
+            <input type="tel" id="phoneParent2" placeholder="ادخل رقم اخر لولي امرك صحيح" pattern="[0-9]{11}"
+              minlength="11" maxlength="11">
+          </div>
+          <div class="input-box">
+            <span class="details">:الايميل</span>
+            <input type="email" id="email" placeholder="ادخل الايميل بشكل صحيح">
+          </div>
+          <div class="input-box">
+            <span class="details">:العنوان</span>
+            <input type="text" id="address" placeholder="اكتب اسم البلدة - المركز" required>
+          </div>
+        </div>
+        <div class="group-details" id="groupsContainer">
+          <span class="group-title">:المجموعات</span>
+          <div class="category2" id="groupsList">
+            <!-- Groups will be loaded here dynamically -->
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="تسـجــيل">
+        </div>
+        <div style="text-align: center;">
+          <h4>مع تحيات مستر/ ياسر الشرع</h4>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
